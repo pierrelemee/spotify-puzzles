@@ -10,16 +10,17 @@ public abstract class AbstractCommand {
     protected BufferedReader in;
     protected PrintStream out;
 
-    public AbstractCommand() {
-        this(System.in, System.out);
-    }
-
-    public AbstractCommand(InputStream in, PrintStream out) {
-        this.in = new BufferedReader(new InputStreamReader(in));
-        this.out = out;
-    }
-
     public abstract String getName();
 
-    public abstract void run() throws Exception;
+    public void run() throws Exception {
+        this.run(System.in, System.out);
+    }
+
+    public void run(InputStream in, PrintStream out) throws Exception {
+        this.in = new BufferedReader(new InputStreamReader(in));
+        this.out = out;
+        this.execute();
+    }
+
+    protected abstract void execute() throws Exception;
 }
