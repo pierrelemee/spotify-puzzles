@@ -23,4 +23,12 @@ public abstract class AbstractCommand {
     }
 
     protected abstract void execute() throws Exception;
+
+    protected Long nextLong() throws Exception {
+        return Long.parseLong(this.nextLine());
+    }
+
+    protected String nextLine() throws Exception {
+        return this.in.readLine().trim();
+    }
 }

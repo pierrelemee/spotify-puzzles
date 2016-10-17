@@ -17,6 +17,6 @@ public class ReverseBinaryCommand extends AbstractCommand {
 
     @Override
     public void execute() throws Exception {
-        this.out.println(this.reverser.reverseBinary(Long.parseLong(this.in.readLine().trim())));
+        this.out.println(this.reverser.reverseBinary(this.nextLong()));
     }
 }
