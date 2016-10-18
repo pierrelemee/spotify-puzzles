@@ -1,7 +1,6 @@
 package fr.pierrelemee.puzzles.services;
 
 import fr.pierrelemee.puzzles.model.Album;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

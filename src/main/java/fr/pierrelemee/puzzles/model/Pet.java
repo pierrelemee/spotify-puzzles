@@ -1,7 +1,5 @@
 package fr.pierrelemee.puzzles.model;
 
-import fr.pierrelemee.puzzles.model.PetKind;
-
 public class Pet {
 
     protected PetKind kind;
