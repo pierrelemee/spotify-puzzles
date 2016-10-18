@@ -50,3 +50,14 @@ cd <path_to_projetc>
 ```
 
 Or any other file / UNIX pipeline of your choice
+
+### Cats vs. Dogs
+
+To optimize the number of viewers for the Cats. vs Dogs TV show, it's as easy:
+
+```
+cd <path_to_projetc>
+./puzles catsvsdogs < ./src/test/resources/catsvsdogs/sample1
+```
+
+Or any other file / UNIX pipeline of your choice
