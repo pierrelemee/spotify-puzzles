@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Service
 public class ZipfSongCommand extends AbstractCommand {
@@ -20,13 +21,13 @@ public class ZipfSongCommand extends AbstractCommand {
 
     @Override
     public void execute() throws Exception {
-        int[] parameters = Arrays.asList(this.nextLine().split(" ")).stream().mapToInt(s -> Integer.parseInt(s)).toArray();
         Album.Builder builder = Album.builder();
-        for (int i = 0; i < parameters[0]; i++) {
+        List<Integer> parameters = this.nextIntegers();
+        for (int i = 0; i < parameters.get(0); i++) {
             String[] elements = this.nextLine().split(" ");
             builder.addSong(elements[1], Integer.parseInt(elements[0]));
         }
-        for (String title: this.calculator.top(parameters[1], builder.build())) {
+        for (String title: this.calculator.top(parameters.get(1), builder.build())) {
             this.out.println(title);
         }
     }
