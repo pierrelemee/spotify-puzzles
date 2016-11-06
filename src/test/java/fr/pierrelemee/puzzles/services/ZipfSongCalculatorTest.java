@@ -1,7 +1,7 @@
 package fr.pierrelemee.puzzles.services;
 
 import fr.pierrelemee.puzzles.Main;
-import fr.pierrelemee.puzzles.model.Album;
+import fr.pierrelemee.puzzles.model.Top;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class ZipfSongCalculatorTest {
             Arrays.asList("four", "two"),
             this.calculator.top(
                 2,
-                Album.builder()
+                Top.builder()
                     .addSong("one", 30)
                     .addSong("two", 30)
                     .addSong("three", 15)
@@ -42,7 +42,7 @@ public class ZipfSongCalculatorTest {
             Arrays.asList("19_2000", "clint_eastwood", "tomorrow_comes_today"),
             this.calculator.top(
                 3,
-                Album.builder()
+                Top.builder()
                     .addSong("re_hash", 197812)
                     .addSong("5_4", 78906)
                     .addSong("tomorrow_comes_today", 189518)

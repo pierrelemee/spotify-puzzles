@@ -1,5 +1,8 @@
 package fr.pierrelemee.puzzles.model;
 
+/**
+ * A voter chooses which cat has to stay and which dog ha sto leave, if the voter is a cat person, the opposite otherwise
+ */
 public class Vote {
 
     private Pet keep;

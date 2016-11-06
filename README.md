@@ -37,7 +37,7 @@ To perform reverse binary based on suggested input, you can use the Shell wrappe
 
 ```
 cd <path_to_projetc>
-./puzles reversebinary < ./src/test/resources/reversebinary/sample1
+./puzzles reversebinary < ./src/test/resources/reversebinary/sample1
 ```
 
 ### Zipfsong
@@ -46,7 +46,7 @@ To compute the Zipfsong's top based, run this:
 
 ```
 cd <path_to_projetc>
-./puzles zipfsong < ./src/test/resources/zipfsong/sample2
+./puzzles zipfsong < ./src/test/resources/zipfsong/sample2
 ```
 
 Or any other file / UNIX pipeline of your choice
@@ -57,7 +57,7 @@ To optimize the number of viewers for the Cats. vs Dogs TV show, it's as easy:
 
 ```
 cd <path_to_projetc>
-./puzles catsvsdogs < ./src/test/resources/catsvsdogs/sample1
+./puzzles catsvsdogs < ./src/test/resources/catsvsdogs/sample1
 ```
 
 Or any other file / UNIX pipeline of your choice

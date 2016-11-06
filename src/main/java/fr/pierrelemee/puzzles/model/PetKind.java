@@ -1,5 +1,8 @@
 package fr.pierrelemee.puzzles.model;
 
+/**
+ * Lists the kind a pet can have
+ */
 public enum PetKind {
 
     CAT,

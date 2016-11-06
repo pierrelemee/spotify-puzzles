@@ -3,9 +3,9 @@ package fr.pierrelemee.puzzles.model;
 import java.util.*;
 
 /**
- * Represents an album
+ * Represents a top, list of songs ordered by popularity
  */
-public class Album {
+public class Top {
 
     private Set<Song> songs = new TreeSet<Song>(new Comparator<Song>() {
         public int compare(Song o1, Song o2) {
@@ -34,8 +34,8 @@ public class Album {
             return this;
         }
 
-        public Album build() {
-            Album album = new Album();
+        public Top build() {
+            Top album = new Top();
             for (Song song: this.songs) {
                 album.addSong(song);
             }

@@ -33,9 +33,9 @@ public class AudienceOptimizer {
     /**
      *
      *
-     * @param cats
-     * @param dogs
-     * @param votes
+     * @param cats number of cats in the show
+     * @param dogs number of dogs in the show
+     * @param votes list of all the votes emitted during the show
      */
     public void optimizeViewers(int cats, int dogs, List<Vote> votes) {
         // Marking map (only to avoid evaluating identical vote

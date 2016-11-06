@@ -1,5 +1,10 @@
 package fr.pierrelemee.puzzles.model;
 
+/**
+ * Represents a pet in the Cats vs. Dogs TV show universe.
+ *
+ * A pet is either a cat or a dog, and is identified by a number, from 1 to n
+ */
 public class Pet {
 
     protected PetKind kind;
